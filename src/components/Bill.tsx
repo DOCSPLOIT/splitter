@@ -28,10 +28,10 @@ export default function Bill() {
     })
     const amountCtx = useContext(AmountContext)
 
-    const calculateAmount = (tip?: any) => {
+    const calculateAmount = (_tip?: any) => {
 
         const { bill, people, } = formik.values;
-
+        const tip = formik.values.tip ?? _tip;
         if (bill && people && tip) {
             const splitBill = +bill / +people;
             const tipAmount = splitBill * (+tip / 100);
