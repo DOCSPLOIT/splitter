@@ -6,7 +6,7 @@ export default function AmountView() {
     const amountCtx = useContext(AmountContext);
     const formikCtx = useContext(FormikContext);
 
-    return <div className="col-md-5 d-flex flex-column  px-4 py-5 bg-secondary ">
+    return <div className="col-md-5 d-flex flex-column mt-3 mt-md-0  px-4 py-5 bg-secondary ">
         <div className="d-flex justify-content-between">
             <div className="">
                 <p className="text-white my-0">Tip Amount</p>
