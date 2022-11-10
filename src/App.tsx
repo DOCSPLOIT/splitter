@@ -1,26 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Logo from './assets/images/logo.svg';
+import Splitter from './components/Splitter';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <div className='vw-100 min-vh-100 d-flex flex-column bg-light-gray' >
+    <img src={Logo} alt="logo" className="mx-auto mt-5 pt-5" />
+    <div className="card mx-auto mt-5 p-4 col-md-8 col-sm-10 row col-12">
+      <Splitter />
     </div>
-  );
+  </div>
 }
 
 export default App;

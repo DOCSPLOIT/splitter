@@ -1,0 +1,19 @@
+.unchecked,
+.checked {
+  transition: 0.16s;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+.unchecked:active,
+.checked:active {
+  background-color: #9fe8df;
+  color: var(--dark) !important;
+}
+.unchecked {
+  background-color: var(--dark);
+}
+.checked {
+  background-color: var(--primary);
+  color: var(--dark) !important;
+}

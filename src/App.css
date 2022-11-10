@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary: hsl(172, 67%, 45%);
+  --dark: hsl(183, 100%, 15%);
+  --light: hsl(189, 41%, 97%);
+  --gray: hsl(184, 14%, 56%);
+  --light-gray: hsl(185, 41%, 84%);
+}
+@import "bootstrap";
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-secondary {
+  background-color: var(--dark) !important;
+}
+.bg-gray {
+  background-color: var(--gray) !important;
+}
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+.btn-primary {
+  background-color: var(--dark) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0px 0px 10px 2px hsla(186, 14%, 56%, 0.318);
+}
+input.form-control {
+  font-weight: 700;
+  background-color: hsl(202, 50%, 97%) !important;
+  border: none !important;
+  outline: none !important;
+  text-align: right !important;
+  color: var(--dark) !important;
+  box-shadow: none !important;
+  transition: none !important;
+  appearance: textfield !important;
+  border-radius: 4px !important;
+}
+input.form-control:focus,
+input.form-control:active {
+  outline: none !important;
+  border: 1px solid #5faaa1 !important;
+  box-shadow: 0px 0px 0px 1px #9bf5ea !important;
+}
+label.form-label {
+  font-weight: 700;
+  color: var(--gray);
+}
+::placeholder {
+  color: hsl(184, 19%, 68%) !important;
+  font-size: larger;
+}
+img.form-control-leading {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 1.5rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.hide-element {
+  visibility: hidden;
+}
+.btn-cyan {
+  background-color: var(--primary);
+  font-weight: 700;
+}
+.btn-cyan:hover,
+.btn-cyan:active {
+  background-color: #9fe8df;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-cyan:disabled {
+  background-color: #0d686d;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  border: none !important;
 }
