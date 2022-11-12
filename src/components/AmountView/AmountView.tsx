@@ -12,14 +12,14 @@ export default function AmountView() {
                 <p className="text-white my-0">Tip Amount</p>
                 <small className="text-muted" >/ person</small>
             </div>
-            <p className={style["amount-text"] + 'h2'} >${amountCtx.tipAmount === 0 ? '0.00' : amountCtx.tipAmount}</p>
+            <p className={style["amount-text"] + ' h2'} >${amountCtx.tipAmount === 0 ? '0.00' : amountCtx.tipAmount}</p>
         </div>
         <div className="d-flex justify-content-between">
             <div className="">
                 <p className="text-white my-0">Total Amount</p>
                 <small className="text-muted" >/ person</small>
             </div>
-            <p className={style["amount-text"] + 'h2'} >${amountCtx.totalAmount === 0 ? '0.00' : amountCtx.totalAmount}</p>
+            <p className={style["amount-text"] + ' h2'} >${amountCtx.totalAmount === 0 ? '0.00' : amountCtx.totalAmount}</p>
         </div>
         <button
             onClick={() => {
