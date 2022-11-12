@@ -6,7 +6,7 @@ import FormikContextWrapper from "../contexts/FormikContext";
 export default function Splitter() {
     return <FormikContextWrapper>
         <AmountContextWrapper>
-            <div className="d-flex flex-column flex-md-row flex-sm-column">
+            <div className="d-flex col-md-12 p-0 flex-column flex-md-row justify-content-between align-items-around flex-sm-column">
                 <Bill />
                 <AmountView />
             </div>
