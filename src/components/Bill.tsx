@@ -48,7 +48,7 @@ export default function Bill() {
     }, [amountCtx])
 
 
-    return <div className="col-md-5 m-auto">
+    return <div className="col-md-5 m-auto m-lg-auto"  >
         <div className="mt-3" >
             <Input
                 errorText={formik.errors.bill}
