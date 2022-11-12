@@ -1,6 +1,6 @@
 import AmountContextWrapper from "../contexts/AmountContext";
 import Bill from "./Bill";
-import AmountView from "./AmountView";
+import AmountView from "./AmountView/AmountView";
 import FormikContextWrapper from "../contexts/FormikContext";
 
 export default function Splitter() {

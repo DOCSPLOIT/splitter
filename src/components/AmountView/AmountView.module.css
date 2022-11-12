@@ -1,0 +1,7 @@
+.bg-secondary {
+  border-radius: 1.5rem;
+}
+.amount-text {
+  font-weight: 700;
+  color: var(--primary);
+}
